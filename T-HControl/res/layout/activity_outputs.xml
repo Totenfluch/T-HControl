@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Lock0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="LockOutput0"
+        android:text="Lock" />
+
+    <Button
+        android:id="@+id/Lock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Lock0"
+        android:onClick="LockOutput1"
+        android:text="Lock" />
+
+    <Button
+        android:id="@+id/Lock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Lock1"
+        android:onClick="LockOutput2"
+        android:text="Lock" />
+
+    <Button
+        android:id="@+id/Lock3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Lock2"
+        android:onClick="LockOutput3"
+        android:text="Lock" />
+
+    <Button
+        android:id="@+id/Lock4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Lock3"
+        android:onClick="LockOutput4"
+        android:text="Lock" />
+
+    <Button
+        android:id="@+id/Lock5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Lock4"
+        android:onClick="LockOutput5"
+        android:text="Lock" />
+
+    <Button
+        android:id="@+id/Lock6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Lock5"
+        android:onClick="LockOutput6"
+        android:text="Lock" />
+
+    <Button
+        android:id="@+id/Lock7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Lock6"
+        android:onClick="LockOutput7"
+        android:text="Lock" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Button07" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button01"
+        android:layout_below="@+id/Button01"
+        android:onClick="ToggleOutput2"
+        android:text="Toggle Output : 2" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button08"
+        android:layout_below="@+id/Button08"
+        android:onClick="ToggleOutput1"
+        android:text="Toggle Output : 1" />
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button02"
+        android:layout_below="@+id/Button02"
+        android:onClick="ToggleOutput3"
+        android:text="Toggle Output : 3" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Lock3"
+        android:layout_toRightOf="@+id/Lock3"
+        android:onClick="ToggleOutput4"
+        android:text="Toggle Output : 4" />
+
+    <Button
+        android:id="@+id/Button05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button04"
+        android:layout_below="@+id/Button04"
+        android:onClick="ToggleOutput5"
+        android:text="Toggle Output : 5" />
+
+    <Button
+        android:id="@+id/Button06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button05"
+        android:layout_below="@+id/Button05"
+        android:onClick="ToggleOutput6"
+        android:text="Toggle Output : 6" />
+
+    <Button
+        android:id="@+id/Button07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Lock7"
+        android:layout_alignBottom="@+id/Lock7"
+        android:layout_alignLeft="@+id/Button06"
+        android:onClick="ToggleOutput7"
+        android:text="Toggle Output : 7" />
+
+    <Button
+        android:id="@+id/Button08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button04"
+        android:layout_alignParentTop="true"
+        android:onClick="ToggleOutput0"
+        android:text="Toggle Output : 0" />
+
+    <Button
+        android:id="@+id/Unlock7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Unlock6"
+        android:layout_toRightOf="@+id/Button06"
+        android:onClick="UnlockOutput7"
+        android:text="Unlock" />
+
+    <Button
+        android:id="@+id/Unlock6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button07"
+        android:layout_alignLeft="@+id/Unlock7"
+        android:onClick="UnlockOutput6"
+        android:text="Unlock" />
+
+    <Button
+        android:id="@+id/Unlock5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button06"
+        android:layout_toRightOf="@+id/Button05"
+        android:onClick="UnlockOutput5"
+        android:text="Unlock" />
+
+    <Button
+        android:id="@+id/Unlock4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button05"
+        android:layout_toRightOf="@+id/Button04"
+        android:onClick="UnlockOutput4"
+        android:text="Unlock" />
+
+    <Button
+        android:id="@+id/Unlock3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button04"
+        android:layout_toRightOf="@+id/Button03"
+        android:onClick="UnlockOutput3"
+        android:text="Unlock" />
+
+    <Button
+        android:id="@+id/Unlock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button03"
+        android:layout_toRightOf="@+id/Button02"
+        android:onClick="UnlockOutput2"
+        android:text="Unlock" />
+
+    <Button
+        android:id="@+id/Unlock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button02"
+        android:layout_toRightOf="@+id/Button02"
+        android:onClick="UnlockOutput1"
+        android:text="Unlock" />
+
+    <Button
+        android:id="@+id/Unlock0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button01"
+        android:layout_toRightOf="@+id/Button01"
+        android:onClick="UnlockOutput0"
+        android:text="Unlock" />
+
+    <TextView
+        android:id="@+id/Credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="by Totenfluch" />
+
+    <CheckBox
+        android:id="@+id/connected_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:checked="true"
+        android:clickable="false"
+        android:text="Connected" />
+
+</RelativeLayout>

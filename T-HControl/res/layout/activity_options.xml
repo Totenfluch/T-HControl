@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/savePort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:hint="Server Port"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/saveIp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/savePort"
+        android:layout_alignLeft="@+id/savePort"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Server IP" />
+
+    <EditText
+        android:id="@+id/saveUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/savePort"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/savePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveUsername"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/saveIp"
+        android:layout_marginTop="20dp"
+        android:text="Set default login informations in here"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" />
+
+    <Button
+        android:id="@+id/toOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="OnSave"
+        android:text="Save" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="by Totenfluch" />
+
+    <CheckBox
+        android:id="@+id/connected_adv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:checked="true"
+        android:clickable="false"
+        android:text="Connected" />
+
+    <Button
+        android:id="@+id/toOutputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="adv_lockall"
+        android:text="Lock all" />
+
+    <Button
+        android:id="@+id/Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toMpc"
+        android:layout_toRightOf="@+id/toOutputs"
+        android:onClick="adv_unlockall"
+        android:text="Unlock all" />
+
+    <Button
+        android:id="@+id/toMpc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toOutputs"
+        android:onClick="adv_enableall"
+        android:text="enable all" />
+
+    <Button
+        android:id="@+id/toAdvanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toMpc"
+        android:layout_alignBottom="@+id/toMpc"
+        android:layout_toRightOf="@+id/toMpc"
+        android:onClick="adv_disableall"
+        android:text="disable all" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toMpc" />
+
+    <Button
+        android:id="@+id/shutdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progressBar1"
+        android:onClick="shutdown"
+        android:text="Shutdown" />
+
+    <Button
+        android:id="@+id/reboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_toRightOf="@+id/shutdown"
+        android:onClick="reboot"
+        android:text="Reboot" />
+
+    <EditText
+        android:id="@+id/rootpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/shutdown"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Root Password" />
+
+    <Switch
+        android:id="@+id/pwlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rootpassword"
+        android:text="Password lock" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Pause"
+        android:onClick="OnToggleMid"
+        android:text="Toggle Mid" />
+
+</RelativeLayout>
