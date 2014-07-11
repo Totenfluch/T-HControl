@@ -6,78 +6,6 @@
     android:background="@drawable/background"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/Lock0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:onClick="LockOutput0"
-        android:text="Lock" />
-
-    <Button
-        android:id="@+id/Lock1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Lock0"
-        android:onClick="LockOutput1"
-        android:text="Lock" />
-
-    <Button
-        android:id="@+id/Lock2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Lock1"
-        android:onClick="LockOutput2"
-        android:text="Lock" />
-
-    <Button
-        android:id="@+id/Lock3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Lock2"
-        android:onClick="LockOutput3"
-        android:text="Lock" />
-
-    <Button
-        android:id="@+id/Lock4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Lock3"
-        android:onClick="LockOutput4"
-        android:text="Lock" />
-
-    <Button
-        android:id="@+id/Lock5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Lock4"
-        android:onClick="LockOutput5"
-        android:text="Lock" />
-
-    <Button
-        android:id="@+id/Lock6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Lock5"
-        android:onClick="LockOutput6"
-        android:text="Lock" />
-
-    <Button
-        android:id="@+id/Lock7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Lock6"
-        android:onClick="LockOutput7"
-        android:text="Lock" />
-
     <ProgressBar
         android:id="@+id/progressBar1"
         style="?android:attr/progressBarStyleHorizontal"
@@ -115,15 +43,6 @@
         android:text="Toggle Output : 3" />
 
     <Button
-        android:id="@+id/Button04"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Lock3"
-        android:layout_toRightOf="@+id/Lock3"
-        android:onClick="ToggleOutput4"
-        android:text="Toggle Output : 4" />
-
-    <Button
         android:id="@+id/Button05"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -150,15 +69,6 @@
         android:layout_alignLeft="@+id/Button06"
         android:onClick="ToggleOutput7"
         android:text="Toggle Output : 7" />
-
-    <Button
-        android:id="@+id/Button08"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button04"
-        android:layout_alignParentTop="true"
-        android:onClick="ToggleOutput0"
-        android:text="Toggle Output : 0" />
 
     <Button
         android:id="@+id/Unlock7"
@@ -223,15 +133,6 @@
         android:onClick="UnlockOutput1"
         android:text="Unlock" />
 
-    <Button
-        android:id="@+id/Unlock0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Button01"
-        android:layout_toRightOf="@+id/Button01"
-        android:onClick="UnlockOutput0"
-        android:text="Unlock" />
-
     <TextView
         android:id="@+id/Credits"
         android:layout_width="wrap_content"
@@ -249,5 +150,106 @@
         android:checked="true"
         android:clickable="false"
         android:text="Connected" />
+
+    <Button
+        android:id="@+id/Button08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Lock1"
+        android:layout_centerHorizontal="true"
+        android:onClick="ToggleOutput0"
+        android:text="Toggle Output : 0" />
+
+    <Button
+        android:id="@+id/Lock0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/Button08"
+        android:onClick="LockOutput0"
+        android:text=" Lock " />
+
+    <Button
+        android:id="@+id/Unlock0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button01"
+        android:layout_toRightOf="@+id/Button01"
+        android:onClick="UnlockOutput0"
+        android:text="Unlock" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button03"
+        android:layout_toLeftOf="@+id/Unlock3"
+        android:onClick="ToggleOutput4"
+        android:text="Toggle Output : 4" />
+
+    <Button
+        android:id="@+id/Lock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Lock0"
+        android:layout_below="@+id/Lock0"
+        android:onClick="LockOutput1"
+        android:text=" Lock " />
+
+    <Button
+        android:id="@+id/Lock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button02"
+        android:layout_alignBottom="@+id/Button02"
+        android:layout_alignLeft="@+id/Lock1"
+        android:onClick="LockOutput2"
+        android:text=" Lock " />
+
+    <Button
+        android:id="@+id/Lock3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button02"
+        android:layout_toLeftOf="@+id/Button02"
+        android:onClick="LockOutput3"
+        android:text=" Lock " />
+
+    <Button
+        android:id="@+id/Lock4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button04"
+        android:layout_alignBottom="@+id/Button04"
+        android:layout_alignLeft="@+id/Lock3"
+        android:onClick="LockOutput4"
+        android:text=" Lock " />
+
+    <Button
+        android:id="@+id/Lock5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button06"
+        android:layout_alignLeft="@+id/Lock4"
+        android:onClick="LockOutput5"
+        android:text=" Lock " />
+
+    <Button
+        android:id="@+id/Lock6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Lock5"
+        android:layout_below="@+id/Lock5"
+        android:onClick="LockOutput6"
+        android:text=" Lock " />
+
+    <Button
+        android:id="@+id/Lock7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Lock6"
+        android:layout_below="@+id/Lock6"
+        android:onClick="LockOutput7"
+        android:text=" Lock " />
 
 </RelativeLayout>

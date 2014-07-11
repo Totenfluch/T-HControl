@@ -16,7 +16,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:onClick="OnLoginPress"
-        android:text="Login" />
+        android:text="Connect" />
 
     <CheckBox
         android:id="@+id/isConnected"
@@ -27,16 +27,6 @@
         android:layout_toRightOf="@+id/doLogin"
         android:clickable="false"
         android:text="Connected" />
-
-    <Button
-        android:id="@+id/toMpc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/toOutputs"
-        android:layout_alignBottom="@+id/toOutputs"
-        android:layout_alignParentLeft="true"
-        android:onClick="switchToMpc"
-        android:text="Mpc" />
 
     <TextView
         android:id="@+id/Credits"
@@ -94,25 +84,6 @@
         android:text="key: *hidden*" />
 
     <Button
-        android:id="@+id/toOutputs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/ServerIp"
-        android:layout_toRightOf="@+id/toMpc"
-        android:onClick="switchToOutputs"
-        android:text="Outputs" />
-
-    <Button
-        android:id="@+id/toAdvanced"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/toOutputs"
-        android:layout_alignBottom="@+id/toOutputs"
-        android:layout_toRightOf="@+id/toOutputs"
-        android:onClick="switchToAdvanced"
-        android:text="Advanced" />
-
-    <Button
         android:id="@+id/toOptions"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
@@ -132,5 +103,33 @@
         android:layout_toLeftOf="@+id/toOptions"
         android:onClick="OnRefresh"
         android:text="Refresh" />
+
+    <Button
+        android:id="@+id/toAdvanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ServerIp"
+        android:layout_toRightOf="@+id/toOutputs"
+        android:onClick="switchToAdvanced"
+        android:text="Advanced" />
+
+    <Button
+        android:id="@+id/toOutputs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ServerIp"
+        android:layout_toRightOf="@+id/toMpc"
+        android:onClick="switchToOutputs"
+        android:text="Outputs" />
+
+    <Button
+        android:id="@+id/toMpc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toOutputs"
+        android:layout_alignBottom="@+id/toOutputs"
+        android:layout_alignLeft="@+id/PrivateKeyText"
+        android:onClick="switchToMpc"
+        android:text="Mpc" />
 
 </RelativeLayout>

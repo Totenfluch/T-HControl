@@ -92,9 +92,6 @@ public class MainActivity extends Activity {
 		toMpc = (Button) findViewById(R.id.toMpc);
 		toAdv = (Button) findViewById(R.id.toAdvanced);
 		toOutput = (Button) findViewById(R.id.toOutputs);
-		toMpc.setEnabled(false);
-		toAdv.setEnabled(false);
-		toOutput.setEnabled(false);
 		
 		ConfigFileStuff.load();
 		
@@ -105,6 +102,7 @@ public class MainActivity extends Activity {
 		}
 		sUsername.setText(bUsername);
 		sPassword.setText(bPassword);
+		
 		/*
 		serverip.setText("192.168.178.38");
 		serverport.setText("9977");
@@ -133,6 +131,10 @@ public class MainActivity extends Activity {
 				DisconnectFromServer("host unreachable");
 			}
 		};
+		
+		toAdv.setEnabled(false);
+		toOutput.setEnabled(false);
+		toMpc.setEnabled(false);
 	}
 
 	public void refresh(){
